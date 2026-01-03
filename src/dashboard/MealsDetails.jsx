@@ -30,15 +30,12 @@ const MealsDetails = () => {
 
   return (
     <div className="relative min-h-screen bg-white  overflow-hidden">
-      {/* 🔙 Back Button */}
       <button
         onClick={() => navigate("/dashboard")}
         className="absolute top-4 left-4 z-50 flex justify-center items-center w-[41px] h-[41px] "
       >
         <img src={back} alt="back" className="w-[18px] h-[18px]" />
       </button>
-
-      {/* 🖼 Image Slider */}
       <div className="relative z-10 overflow-hidden">
         <Slider {...settings}>
           {images.map((img, index) => (
@@ -51,8 +48,6 @@ const MealsDetails = () => {
           ))}
         </Slider>
       </div>
-
-      {/* 📄 Content Card */}
       <div className="relative z-30 -mt-14 rounded-t-[25px] bg-white px-8 pt-6 pb-10 ">
         {/* Title & Rating */}
         <div className="flex justify-between items-center">
@@ -67,21 +62,15 @@ const MealsDetails = () => {
             </span>
           </div>
         </div>
-
-        {/* Location */}
         <p className="text-sm text-[#505259] font-medium text-[16px]">
           Connaught Place, New Delhi
         </p>
-
-        {/* Offers */}
         <div className="mt-2">
           <span className="text-[#D39171] inline-flex gap-1 font-urbanist font-semibold text-[12px]">
             <img src={clock} alt="clock" className="w-[15px] h-[15px]" />4
             Offers Trending
           </span>
         </div>
-
-        {/* Description */}
         <p className="mt-4 text-[#515151] font-urbanist font-medium text-[14px] leading-[1.2] tracking-normal align-middle">
           Our delicate vanilla cake swirled with chocolate and filled with mocha
           chocolate chip cream and a layer of dark chocolate ganache.

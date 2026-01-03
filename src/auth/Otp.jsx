@@ -86,21 +86,14 @@ const Otp = () => {
           className="w-[19px] h-[19px] cursor-pointer"
         />
       </div>
-
-      {/* Center Content */}
       <div className="flex px-5 justify-center items-center h-screen">
         <div className="flex flex-col">
-          {/* Heading */}
           <div className=" h-[34px] text-[26px] font-bold leading-[130%] tracking-[-0.01em]  text-[#1E232C]">
             OTP Verification
           </div>
-
-          {/* Description */}
           <div className="mt-1 text-[16px] font-medium leading-[150%]  text-[#8391A1]">
             Enter the verification code we just sent on your Mobile Number.
           </div>
-
-          {/* OTP Boxes */}
           <div className="mt-4 flex gap-[12px]">
             {otp.map((value, i) => (
               <input
